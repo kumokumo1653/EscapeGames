@@ -8,7 +8,7 @@ public class sample : MonoBehaviour
 
     public GameObject player;
     void Start() {
-        player.GetComponent<ClickEvenHandler>().clickEvent.AddListener(sampele);
+        player.GetComponent<ClickEventHandler>().clickEvent.AddListener(sampele);
     }
 
     // Update is called once per frame

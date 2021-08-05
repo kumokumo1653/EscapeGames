@@ -1,0 +1,124 @@
+@startuml
+skinparam classAttributeIconSize 0
+    frame DontLoad{
+        package Camera {
+            object inheritCamera
+        }
+        package Player {
+            object inheritPlayer
+            object ClickEventHandler
+            object GameDataCollection{
+                - eventFlagList : bool[] 
+                - itemList : List<enum itemList> 
+                - selectedItem : String
+            }
+            object GameManager
+        }
+        package TextUICanvas{
+            object inheritTextCanvas
+            object TextController
+        }
+        package SceneCanvas{
+            object SceneController
+        }
+        package RightSide{}
+        package LeftSide{}
+        'アイテムUI
+        package ItemUICanvas{
+            object inheritItemCanvas
+            object itemListController{
+                --
+                + pushItem(Name : String)
+                + popItem (Name : String)
+            }
+        }
+        package Text{}
+        package ItemSlot1{
+            object ClickItemListener1
+        }
+        package ItemSlot2{
+            object ClickItemListener2
+        }
+        package ItemSlot3{
+            object ClickItemListener3
+        }
+        package ItemSlot4{
+            object ClickItemListener4
+        }
+        package RightArrow{}
+        package LeftArrow{}
+    }
+
+    frame map{
+        package BackGround{
+            object InitStage
+        }
+        package EventImage1{
+            object ClickEventListener1
+            note bottom: Scene遷移
+        }
+        package EventImage2{
+            object ClickEventListener2
+            note bottom: アイテム取得
+        }
+        package EventImage3{
+            object ClickEventListener3
+            note bottom: 状態変化
+        }
+    }
+
+    frame enum{
+        enum itemList
+        enum eventList
+        enum TextList
+        enum SceneList
+    }
+    frame staticClass{
+        class TextCollection{
+            +{static} TextList: List<String>
+        }
+    }
+
+    ItemUICanvas -[#Green]+ ItemSlot1
+    ItemUICanvas -[#Green]+ ItemSlot2
+    ItemUICanvas -[#Green]+ ItemSlot3
+    ItemUICanvas -[#Green]+ ItemSlot4
+    ItemUICanvas -[#Green]+ RightArrow
+    ItemUICanvas -[#Green]+ LeftArrow
+
+    ClickEventHandler -[#Black]--  ClickItemListener1
+    ClickEventHandler -[#Black]--  ClickItemListener2
+    ClickEventHandler -[#Black]--  ClickItemListener3
+    ClickEventHandler -[#Black]--  ClickItemListener4
+
+    TextUICanvas -[#Green]-+ Text
+    ClickEventHandler -[#Black]-- ClickEventListener1
+    ClickEventHandler -[#Black]-- ClickEventListener2
+    ClickEventHandler --[#Black]- ClickEventListener3
+
+
+
+    GameDataCollection --- eventList
+    GameDataCollection --- itemList
+
+
+    itemListController --- GameDataCollection
+
+    TextController --- TextCollection
+    TextController --- TextList
+     
+
+    SceneCanvas -[#Green]-+ RightSide
+    SceneCanvas -[#Green]-+ LeftSide
+    SceneController -- SceneList
+
+    ClickEventListener1 -- SceneList
+    ClickEventListener2 -- GameDataCollection
+    ClickEventListener2 --- itemListController
+    ClickEventListener3 -- GameDataCollection
+    InitStage -- GameDataCollection
+
+
+    GameManager -- GameDataCollection
+
+@enduml

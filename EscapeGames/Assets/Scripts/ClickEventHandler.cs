@@ -6,7 +6,7 @@ using System;
 
 [System.Serializable]
 public class ClickEvent : UnityEvent<GameObject, Vector2>{ }
-public class ClickEvenHandler : MonoBehaviour {
+public class ClickEventHandler : MonoBehaviour {
     [HideInInspector]
     public ClickEvent clickEvent;
     public Camera camera_object; //カメラを取得
