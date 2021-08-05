@@ -8,7 +8,8 @@ public enum eventList{
     LIST_LEN
 }
 public enum itemList{
-
+    ink, 
+    hasami, 
     LIST_LEN
 }
 
