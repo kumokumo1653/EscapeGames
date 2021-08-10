@@ -6,6 +6,7 @@ public class InheritPlayer : MonoBehaviour
 {
     [HideInInspector]
     public static InheritPlayer singleton;
+    public static GameObject Instance{get{return singleton.gameObject;}}
     void Awake() {
         if (singleton == null) {
                 DontDestroyOnLoad (this.gameObject);
