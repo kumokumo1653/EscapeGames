@@ -15,6 +15,8 @@ public enum itemList{
 
 //Scene名と同じ
 public enum SceneList{
-
+    Door,
+    KeyBox,
+    WhiteBoard,
     LIST_LEN
 }

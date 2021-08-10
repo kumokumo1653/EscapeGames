@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Door.unity
+    guid: eacc79900d644cb4f845809225a2d420
+  - enabled: 1
+    path: Assets/Scenes/KeyBox.unity
+    guid: 4a8c76f7916631b4b91ba48670d44c3e
   m_configObjects: {}
