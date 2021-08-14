@@ -1,0 +1,63 @@
+@startuml
+skinparam classAttributeIconSize 0
+    frame DontLoad{
+        package Camera {
+            object inheritCamera
+        }
+        package Player {
+            object inheritPlayer
+            object ClickEventHandler
+            object GameDataCollection{
+                - eventFlagList : bool[] 
+                - itemList : List<enum itemList> 
+                - selectedItem : String
+            }
+            object GameManager
+        }
+        package TextUICanvas{
+            object inheritTextCanvas
+            object TextController
+        }
+        package Text{}
+    }
+
+
+    frame enum{
+        enum itemList
+        enum eventList
+        enum TextList
+        enum SceneList
+    }
+    frame staticClass{
+        class TextCollection{
+            +{static} TextList: List<String>
+        }
+    }
+
+
+
+    TextUICanvas -[#Green]-+ Text
+
+    ClickEventHandler -[#Black]-- ClickEventListener2
+
+
+
+    GameDataCollection --- eventList
+    GameDataCollection --- itemList
+
+
+
+    TextController --- TextCollection
+    TextController --- TextList
+     
+
+    SceneController -- SceneList
+
+    ClickEventListener2 ---> TextController
+    TextController --> ClickEventHandler
+    ClickEventListener2 ---> TextList
+
+
+    GameManager -- GameDataCollection
+
+@enduml
