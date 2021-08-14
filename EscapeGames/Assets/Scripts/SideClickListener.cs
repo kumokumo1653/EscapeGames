@@ -18,13 +18,46 @@ public class SideClickListener : MonoBehaviour
                 case "Door":
                     SceneManager.LoadScene(SceneList.WhiteBoard.ToString());
                     break;
+                case "WhiteBoard":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "Desk":
+                    SceneManager.LoadScene(SceneList.ProjectorScreen.ToString());
+                    break;
+                case "ProjectorScreen":
+                    SceneManager.LoadScene(SceneList.WaterTrash.ToString());
+                    break;
+                case "WaterTrash":
+                    SceneManager.LoadScene(SceneList.Door.ToString());
+                    break;
+
             }
         }
         if(obj.name == "RightSide"){
             switch (SceneManager.GetActiveScene().name) {
+                case "Door":
+                    SceneManager.LoadScene(SceneList.WaterTrash.ToString());
+                    break;
                 case "WhiteBoard":
                     SceneManager.LoadScene(SceneList.Door.ToString());
                     break;
+                case "Desk":
+                    SceneManager.LoadScene(SceneList.WhiteBoard.ToString());
+                    break;
+                case "ProjectorScreen":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "WaterTrash":
+                    SceneManager.LoadScene(SceneList.ProjectorScreen.ToString());
+                    break;
+            }
+        }
+        if(obj.name == "ButtomSide"){
+            switch(SceneManager.GetActiveScene().name){
+                case "KeyBox":
+                    SceneManager.LoadScene(SceneList.Door.ToString());
+                    break;
+                
             }
         }
     }

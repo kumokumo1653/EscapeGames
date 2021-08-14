@@ -18,5 +18,8 @@ public enum SceneList{
     Door,
     KeyBox,
     WhiteBoard,
+    Desk,
+    ProjectorScreen,
+    WaterTrash,
     LIST_LEN
 }
