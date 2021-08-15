@@ -18,8 +18,10 @@ public class TextController : MonoBehaviour
         text = messagewindow.transform.Find("Text").GetComponent<Text>();
 
         // メッセージウィンドウを消すボタン
-        //closeButton = messagewindow.transform.Find("closeButton").gameObject;
-        //GameObject.Find("Player").GetComponent<ClickEventHandler>().clickEvent.AddListener(disappearWindow);
+        // このボタンを透明にして画面全体に写すことで画面のどこかをクリックすると
+        // メッセージの表示が消える.
+        closeButton = messagewindow.transform.Find("closeButton").gameObject;
+        GameObject.Find("Player").GetComponent<ClickEventHandler>().clickEvent.AddListener(disappearWindow);
 
         messagewindow.SetActive(false);
     }
