@@ -29,6 +29,7 @@ public class ItemListController : MonoBehaviour
 
         GameObject[] selects = GameObject.FindGameObjectsWithTag("Selected");
             //アイテムをクリックするのに連動して赤い枠の表示切替
+            //アイテムスロット(青いボタン)をクリックすると全てのアイテムの選択を解除するようにしている
             foreach(GameObject select in selects){
                 select.SetActive(false);
                 }
