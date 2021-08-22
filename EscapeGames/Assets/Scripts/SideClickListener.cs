@@ -13,6 +13,7 @@ public class SideClickListener : MonoBehaviour
     }
 
     public void SideListener(GameObject obj, Vector2 vec2){
+        Debug.Log(obj.name);
         if(obj.name == "LeftSide"){
             switch (SceneManager.GetActiveScene().name) {
                 case "Door":
@@ -58,6 +59,33 @@ public class SideClickListener : MonoBehaviour
                     SceneManager.LoadScene(SceneList.Door.ToString());
                     break;
                 
+                case "Printer":
+                    SceneManager.LoadScene(SceneList.WhiteBoard.ToString());
+                    break;
+                case "LockBox":
+                    SceneManager.LoadScene(SceneList.WhiteBoard.ToString());
+                    break;
+                case "BookShelf":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "Shelf":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "PC":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "SlidingDoor":
+                    SceneManager.LoadScene(SceneList.Desk.ToString());
+                    break;
+                case "Calendar":
+                    SceneManager.LoadScene(SceneList.WaterTrash.ToString());
+                    break;
+                case "Water":
+                    SceneManager.LoadScene(SceneList.WaterTrash.ToString());
+                    break;
+                case "Trash":
+                    SceneManager.LoadScene(SceneList.WaterTrash.ToString());
+                    break;
             }
         }
     }

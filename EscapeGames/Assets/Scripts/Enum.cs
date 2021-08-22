@@ -18,8 +18,17 @@ public enum SceneList{
     Door,
     KeyBox,
     WhiteBoard,
+    Printer,
+    LockBox,
     Desk,
+    BookShelf,
+    Shelf,
+    PC,
+    SlidingDoor,
     ProjectorScreen,
     WaterTrash,
+    Calendar,
+    Trash,
+    Water,
     LIST_LEN
 }
