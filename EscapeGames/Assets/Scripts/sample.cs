@@ -6,8 +6,9 @@ public class sample : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject player;
+    private GameObject player;
     void Start() {
+        player  = InheritPlayer.Instance;
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(sampele);
     }
 
