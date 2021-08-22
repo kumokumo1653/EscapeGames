@@ -5,7 +5,52 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Door.unity
+    guid: eacc79900d644cb4f845809225a2d420
+  - enabled: 1
+    path: Assets/Scenes/KeyBox.unity
+    guid: 4a8c76f7916631b4b91ba48670d44c3e
+  - enabled: 1
+    path: Assets/Scenes/BookShelf.unity
+    guid: b51eef75c4a5ffd4cb5f99e541b0b2f5
+  - enabled: 1
+    path: Assets/Scenes/LockBox.unity
+    guid: a5bd415f779a4524db96b30c3fe2ade3
+  - enabled: 1
+    path: Assets/Scenes/PC.unity
+    guid: b8f82cf459c350e4893334a0896fff25
+  - enabled: 1
+    path: Assets/Scenes/Calendar.unity
+    guid: 757a66f15010bca4eb1f44cc297c4dca
+  - enabled: 1
+    path: Assets/Scenes/Trash.unity
+    guid: f8d764a39f6d0cb498f813df7a9d7310
+  - enabled: 1
+    path: Assets/Scenes/Water.unity
+    guid: 83bfaac8212a2524c83ef40b05103ccb
+  - enabled: 1
+    path: Assets/Scenes/Printer.unity
+    guid: be020fdaa5980c942a65bbc861cc61a0
+  - enabled: 1
+    path: Assets/Scenes/Shelf.unity
+    guid: 97234d9a9584ef34f9fa7e54af9b8e9d
+  - enabled: 1
+    path: Assets/Scenes/SlidingDoor.unity
+    guid: aa682779f329c124286b5908173fd86f
+  - enabled: 1
+    path: Assets/Scenes/WhiteBoard.unity
+    guid: 03e7fa6d417dc8f48bb253aa0c49cc55
+  - enabled: 1
+    path: Assets/Scenes/Desk.unity
+    guid: c8dff4097f2c8ae4c9cfa85cdfec5de5
+  - enabled: 1
+    path: Assets/Scenes/WaterTrash.unity
+    guid: c4ac0b4a00f4c7b44bfff0ff06b37943
+  - enabled: 1
+    path: Assets/Scenes/ProjectorScreen.unity
+    guid: 536c8e1363f915d4398e1dabeca45d15
   m_configObjects: {}
