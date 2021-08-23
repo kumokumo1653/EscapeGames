@@ -8,8 +8,19 @@ public enum eventList{
     LIST_LEN
 }
 public enum itemList{
-    ink, 
-    hasami, 
+    Ink,
+    DoorKey,
+    Film1,
+    Film2,
+    Paper,
+    ShelfKey,
+    SlidingDoorKey,
+    Book,
+    Rod,
+    Cord,
+    USB,
+    Scissors,
+    None,
     LIST_LEN
 }
 
