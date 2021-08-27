@@ -6,23 +6,21 @@ public class ClickEventListener : MonoBehaviour
 {
     // 利便性のためにmessagewindowはstaticにしておく.
     // こうしておけばインスペクターから毎回メッセージウィンドウを選択しないで済む
-    private static GameObject messagewindow; // メッセージウィンドウ(Panel)
-    private static GameObject player;               // プレイヤー
+    private  GameObject messagewindow; // メッセージウィンドウ(Panel)
+    private  GameObject player;               // プレイヤー
     public string textlist;                  // 表示テキストのEnum
 
     void Start()
     {
-        // 読み込みが一回で済むようにstatic変数に入れておく
-        messagewindow = GameObject.Find("Canvas");
+        //canvasの取得
+        messagewindow = InheritTextArea.Instance;
         messagewindow = messagewindow.transform.Find("MessageWindow").gameObject;
         if (messagewindow == null) {
             messagewindow = GameObject.Find("MessageWindow");
         }
 
         // コールバック関数をセット
-        if (player == null) {
-            player = GameObject.Find("Player");
-        }
+        player = InheritPlayer.Instance;
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(OnClick);
     }
 
