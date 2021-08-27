@@ -13,7 +13,6 @@ public class SceneClickListener : MonoBehaviour
     }
 
     public void SceneListener(GameObject obj, Vector2 vec2){
-        Debug.Log(obj.name);
         switch(obj.name){
             case "C_Door":
                 SceneManager.LoadScene(SceneList.KeyBox.ToString());

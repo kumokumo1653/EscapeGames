@@ -4,12 +4,44 @@ using UnityEngine;
 
 //ユーザ操作によって状態が変わるもの
 public enum eventList{
-
+    Door,
+    KeyBox,
+    LockBox,
+    Printer,
+    PC,
+    SlidingDoor,
+    Shelf,
+    BookShelf,
+    Screen,
+    Projector,
+    Water,
+    Trash,
     LIST_LEN
 }
+
+public enum status{
+    initial,
+    halfWay1,
+    halfWay2,
+    halfWay3,
+    halfWay4,
+    final
+}
+
 public enum itemList{
-    ink, 
-    hasami, 
+    Ink,
+    DoorKey,
+    Film1,
+    Film2,
+    Paper,
+    ShelfKey,
+    SlidingDoorKey,
+    Book,
+    Rod,
+    Cord,
+    USB,
+    Scissors,
+    None,
     LIST_LEN
 }
 

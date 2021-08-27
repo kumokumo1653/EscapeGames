@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InheritCamera : MonoBehaviour
+public class InheritItemArea : MonoBehaviour
 {
     [HideInInspector]
-    public static InheritCamera singleton;
+    public static InheritItemArea singleton;
     public static GameObject Instance{get{return singleton.gameObject;}}
     void Awake() {
         if (singleton == null) {

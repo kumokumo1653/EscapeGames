@@ -13,7 +13,6 @@ public class SideClickListener : MonoBehaviour
     }
 
     public void SideListener(GameObject obj, Vector2 vec2){
-        Debug.Log(obj.name);
         if(obj.name == "LeftSide"){
             switch (SceneManager.GetActiveScene().name) {
                 case "Door":
