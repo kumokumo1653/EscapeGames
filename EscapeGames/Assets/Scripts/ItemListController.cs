@@ -75,7 +75,6 @@ public class ItemListController : MonoBehaviour
             //アイテムの選択状態を解除
             dataCollection.selectedItem = itemList.None;
         }
-        Debug.Log(dataCollection.selectedItem);
     }
 
     public void selectItem(GameObject obj, Vector2 vec2){
