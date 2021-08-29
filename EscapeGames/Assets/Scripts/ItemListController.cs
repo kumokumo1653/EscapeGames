@@ -33,6 +33,9 @@ public class ItemListController : MonoBehaviour
 
     public void popItem(itemList e){
         dataCollection.ItemList.Remove(e);
+        if(player.GetComponent<GameDataCollection>().selectedItem == e){
+            player.GetComponent<GameDataCollection>().selectedItem = itemList.None;
+        }
         DrawItemSlot();
     }
 
@@ -44,11 +47,13 @@ public class ItemListController : MonoBehaviour
                 if(dataCollection.ItemList[startSlot + i] == dataCollection.selectedItem){
                     selected = true;
                     background.GetComponent<SpriteRenderer>().sprite = backgrounds[i + 1];
-                }else if(!selected)
-                    background.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+                }
             }catch(Exception e){
                 ItemSlots[i].GetComponent<SpriteRenderer>().sprite = sprites[(int)itemList.None];    
             }
+        }
+        if(!selected){
+            background.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
         }
     }
 

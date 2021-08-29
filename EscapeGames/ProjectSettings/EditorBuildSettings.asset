@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Desk.unity
     guid: c8dff4097f2c8ae4c9cfa85cdfec5de5
   - enabled: 1
+    path: Assets/Scenes/Drawer.unity
+    guid: c81dc2e2bf534a34d978b227c1e3fa8c
+  - enabled: 1
     path: Assets/Scenes/WaterTrash.unity
     guid: c4ac0b4a00f4c7b44bfff0ff06b37943
   - enabled: 1

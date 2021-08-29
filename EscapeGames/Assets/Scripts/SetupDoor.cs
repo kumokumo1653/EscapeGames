@@ -14,7 +14,7 @@ public class SetupDoor : MonoBehaviour
         Setup();
     }
 
-    void Setup(){
+    public void Setup(){
         if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] == status.initial){
             Door.GetComponent<SpriteRenderer>().sprite = Doors[0]; 
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] == status.halfWay1){

@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Numbers: {fileID: 1639120950}
+  Setup: {fileID: 1434504532}
 --- !u!1 &884640836
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944d1d4a5b307134ebbb40c048bae8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setup: {fileID: 1434504532}
 --- !u!1 &1115215568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1074,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e4b83bc2c66778a48a0143431d373c53, type: 3}
   KeyBox: {fileID: 884640836}
   C_DoorKey: {fileID: 1077339987}
+  text: {fileID: 1639120950}
+  numbers: {fileID: 695587843}
 --- !u!4 &1434504534
 Transform:
   m_ObjectHideFlags: 0

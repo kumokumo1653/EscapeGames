@@ -8,6 +8,8 @@ public class InputNumbers : MonoBehaviour
     private GameObject Player;
     public Text Numbers; 
 
+    public GameObject Setup;
+
     void Start()
     {
         Player = InheritPlayer.Instance;
@@ -17,10 +19,18 @@ public class InputNumbers : MonoBehaviour
     void ClickNumber(GameObject obj, Vector2 vec2){
         int num;
         
+        //nameがint変換できるか
         if(int.TryParse(obj.name, out num)){
             if(selectNumbers.Length < 5){
                 selectNumbers += num;
                 UpdateNumbers();
+
+                //正解ならキーボックスを開ける。
+                if(Numbers.text == "  1  1  1  1  1"){
+                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.halfWay1;
+                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
+                    Setup.GetComponent<SetupKeyBox>().Setup(); 
+                }
             }
         }else if(obj.name == "BS"){
             if(selectNumbers.Length > 0){
@@ -28,6 +38,7 @@ public class InputNumbers : MonoBehaviour
                 UpdateNumbers();
             }
         }
+
     }
 
     void UpdateNumbers(){
