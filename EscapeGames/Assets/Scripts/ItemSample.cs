@@ -23,6 +23,10 @@ public class ItemSample : MonoBehaviour
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Rod);
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Paper);
             itemArea.GetComponent<ItemListController>().pushItem(itemList.ShelfKey);
+            itemArea.GetComponent<ItemListController>().pushItem(itemList.Film1);
+            itemArea.GetComponent<ItemListController>().pushItem(itemList.Film2);
+            itemArea.GetComponent<ItemListController>().pushItem(itemList.Cord);
+
         }
     }
 }

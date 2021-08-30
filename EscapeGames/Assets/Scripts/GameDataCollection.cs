@@ -17,6 +17,7 @@ public class GameDataCollection : MonoBehaviour
             eventFlagList[i] = status.initial;
         }
         eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
+        //eventFlagList[(int)eventList.Trash] = status.final;
     }
 
     void Start()

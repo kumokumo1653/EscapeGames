@@ -25,6 +25,18 @@ public enum status{
     halfWay2,
     halfWay3,
     halfWay4,
+    halfWay5,
+    halfWay6,
+    halfWay7,
+    halfWay8,
+    halfWay9,
+    halfWay10,
+    halfWay11,
+    halfWay12,
+    halfWay13,
+    halfWay14,
+    halfWay15,
+    halfWay16,
     final
 }
 
