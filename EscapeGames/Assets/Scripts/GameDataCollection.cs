@@ -16,6 +16,7 @@ public class GameDataCollection : MonoBehaviour
         for(int i = 0; i < (int)eventList.LIST_LEN; i++){
             eventFlagList[i] = status.initial;
         }
+        eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
     }
 
     void Start()
