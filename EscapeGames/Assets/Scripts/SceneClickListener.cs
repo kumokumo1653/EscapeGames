@@ -44,6 +44,9 @@ public class SceneClickListener : MonoBehaviour
             case "C_Water":
                 SceneManager.LoadScene(SceneList.Water.ToString());
                 break;
+            case "C_Side":
+                SceneManager.LoadScene(SceneList.PCSide.ToString());
+                break;
         }
             
         

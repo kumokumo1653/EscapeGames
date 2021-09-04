@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class InputNumbers : MonoBehaviour
+
+public class InputPassword : MonoBehaviour
 {
     private string selectNumbers = "";
     private GameObject Player;
@@ -27,12 +28,6 @@ public class InputNumbers : MonoBehaviour
                 selectNumbers += num;
                 UpdateNumbers();
 
-                //正解ならキーボックスを開ける。
-                if(Numbers.text == "  1  1  1  1  1"){
-                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.halfWay1;
-                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
-                    Setup.GetComponent<SetupKeyBox>().Setup(); 
-                }
             }
         }else if(obj.name == "BS"){
             if(selectNumbers.Length > 0){
@@ -48,7 +43,7 @@ public class InputNumbers : MonoBehaviour
         for(int i = 0; i < selectNumbers.Length;i++){
             Numbers.text += selectNumbers[i];
             if(i != selectNumbers.Length - 1){
-                Numbers.text += "  ";
+                Numbers.text += "   ";
             }
 
         }

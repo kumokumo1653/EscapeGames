@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BookShelf.unity
     guid: b51eef75c4a5ffd4cb5f99e541b0b2f5
   - enabled: 1
+    path: Assets/Scenes/PCSide.unity
+    guid: 9491204b34efafa4295849225db89ae6
+  - enabled: 1
     path: Assets/Scenes/LockBox.unity
     guid: a5bd415f779a4524db96b30c3fe2ade3
   - enabled: 1

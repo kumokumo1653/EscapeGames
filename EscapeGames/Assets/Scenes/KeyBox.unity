@@ -443,6 +443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Numbers: {fileID: 1639120950}
+  maxLength: 13
+  maxNumbers: 5
   Setup: {fileID: 1434504532}
 --- !u!1 &884640836
 GameObject:
