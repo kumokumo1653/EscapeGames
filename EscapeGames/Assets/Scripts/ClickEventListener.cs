@@ -9,6 +9,7 @@ public class ClickEventListener : MonoBehaviour
     private  GameObject messagewindow; // メッセージウィンドウ(Panel)
     private  GameObject player;               // プレイヤー
     public string textlist;                  // 表示テキストのEnum
+    public string multitextlist;            // 表示テキストのEnum｡二回連続以上のもの｡
 
     void Start()
     {
@@ -29,8 +30,13 @@ public class ClickEventListener : MonoBehaviour
     {
         if (obj == this.gameObject) {
             //Debug.Log(textlist + "がクリックされました.");
-            TextList e = (TextList)System.Enum.Parse(typeof(TextList), textlist);
-            messagewindow.GetComponent<TextController>().pushText(e);
+            if (!System.String.IsNullOrEmpty(this.textlist)) {
+                TextList e = (TextList)System.Enum.Parse(typeof(TextList), textlist);
+                messagewindow.GetComponent<TextController>().pushText(e);
+            } else if (!System.String.IsNullOrEmpty(this.multitextlist)) {
+                MultiTextList e = (MultiTextList)System.Enum.Parse(typeof(MultiTextList), this.multitextlist);
+                messagewindow.GetComponent<TextController>().pushText(e);
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ public class DoorKeyClickListener : MonoBehaviour
 {
     private GameObject player;
     private GameObject itemArea;
+    public GameObject setup;
     void Start() {
         player = InheritPlayer.Instance;
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(DoorKeyListener);
@@ -17,7 +18,11 @@ public class DoorKeyClickListener : MonoBehaviour
         if(obj == this.gameObject){
             itemArea.GetComponent<ItemListController>().pushItem(itemList.DoorKey);
             Debug.Log("asdf");
-            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            //eventflagの更新
+            player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.final;
+            player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.final;
+
+            setup.GetComponent<SetupKeyBox>().Setup();
         }
     }
 }

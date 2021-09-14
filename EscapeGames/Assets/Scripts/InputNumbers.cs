@@ -7,6 +7,10 @@ public class InputNumbers : MonoBehaviour
     private string selectNumbers = "";
     private GameObject Player;
     public Text Numbers; 
+    public int maxLength;
+    public int maxNumbers;
+
+    public GameObject Setup;
 
     void Start()
     {
@@ -17,10 +21,18 @@ public class InputNumbers : MonoBehaviour
     void ClickNumber(GameObject obj, Vector2 vec2){
         int num;
         
+        //nameがint変換できるか
         if(int.TryParse(obj.name, out num)){
-            if(selectNumbers.Length < 5){
+            if(selectNumbers.Length < maxNumbers){
                 selectNumbers += num;
                 UpdateNumbers();
+
+                //正解ならキーボックスを開ける。
+                if(Numbers.text == "  1  1  1  1  1"){
+                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.halfWay1;
+                    Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
+                    Setup.GetComponent<SetupKeyBox>().Setup(); 
+                }
             }
         }else if(obj.name == "BS"){
             if(selectNumbers.Length > 0){
@@ -28,6 +40,7 @@ public class InputNumbers : MonoBehaviour
                 UpdateNumbers();
             }
         }
+
     }
 
     void UpdateNumbers(){
@@ -40,7 +53,7 @@ public class InputNumbers : MonoBehaviour
 
         }
         //5文字入れてないときは13文字目まで空白で埋める。
-        Numbers.text.PadRight(13);
+        Numbers.text.PadRight(maxLength);
     }
 
 }

@@ -9,6 +9,9 @@ public class GameDataCollection : MonoBehaviour
     public itemList selectedItem{get; set;}
 
     public status[] eventFlagList{get;set;}
+
+    public bool isHasInk{get;set;}
+    public bool isHasScissors{get;set;}
     void Awake() {
         ItemList = new List<itemList>(); 
         selectedItem = itemList.None;
@@ -16,17 +19,13 @@ public class GameDataCollection : MonoBehaviour
         for(int i = 0; i < (int)eventList.LIST_LEN; i++){
             eventFlagList[i] = status.initial;
         }
-        eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
-        //eventFlagList[(int)eventList.Trash] = status.final;
+
+        isHasInk = false;
+        isHasScissors = false;
     }
 
     void Start()
     {
-        
     }
 
-    void Update()
-    {
-        
-    }
 }
