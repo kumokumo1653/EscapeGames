@@ -17,7 +17,8 @@ public class ItemSample : MonoBehaviour
     {
         if(!f){
             f = true;
-            itemArea.GetComponent<ItemListController>().pushItem(itemList.USB);
+            itemArea.GetComponent<ItemListController>().pushItem(itemList.ShelfKey);
+            itemArea.GetComponent<ItemListController>().pushItem(itemList.SlidingDoorKey);
         }
     }
 }
