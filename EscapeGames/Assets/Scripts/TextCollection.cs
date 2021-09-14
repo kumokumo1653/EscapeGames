@@ -32,7 +32,7 @@ public enum TextList{
     checkScreen1,//初期(スクリーンがおろされていない状態)
     getFilm1,//画面5 ↓
     getKeyOverShelf,
-    hitn1,//ヒント↓
+    hint1,//ヒント↓
     hint2,
     hint2_1,
     hint3,

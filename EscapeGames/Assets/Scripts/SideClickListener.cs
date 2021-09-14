@@ -73,6 +73,12 @@ public class SideClickListener : MonoBehaviour
                 case "PC":
                     SceneManager.LoadScene(SceneList.Desk.ToString());
                     break;
+                case "PCSide":
+                    SceneManager.LoadScene(SceneList.PC.ToString());
+                    break;
+                case "Drawer":
+                    SceneManager.LoadScene(SceneList.Shelf.ToString());
+                    break;
                 case "SlidingDoor":
                     SceneManager.LoadScene(SceneList.Desk.ToString());
                     break;
