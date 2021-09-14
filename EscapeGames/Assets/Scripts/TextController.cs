@@ -12,7 +12,7 @@ public class TextController : MonoBehaviour
     private List<string> text_queue;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // メッセージウィンドウと表示テキストを取得
         messagewindow = this.gameObject;
@@ -44,7 +44,8 @@ public class TextController : MonoBehaviour
     }
 
     public void pushText(TextList e) {
-        Debug.Log("pushText: TextList");
+        Debug.Log(text_queue);
+        Debug.Log(TextCollection.TextList[(int)e]);
         text_queue.Add(TextCollection.TextList[(int)e]);
         this.flushMessageWindow();
     }
@@ -62,7 +63,6 @@ public class TextController : MonoBehaviour
     }
 
     public void pushText(MultiTextList e) {
-        Debug.Log("pushText: MultiTextList");
         var text = MultiTextCollection.MultiTextList[(int)e];
         for(int i = 0;i < text.Length; i++) {
             this.text_queue.Add(text[i]);
