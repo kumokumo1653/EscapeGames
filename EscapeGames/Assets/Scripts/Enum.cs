@@ -39,8 +39,6 @@ public enum status{
     halfWay12,
     halfWay13,
     halfWay14,
-    halfWay15,
-    halfWay16,
     final
 }
 
