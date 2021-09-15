@@ -15,8 +15,10 @@ public class ClickGOListener : MonoBehaviour
 
     public void ClickGO(GameObject obj, Vector2 vec2){
         if(obj == this.gameObject){
-            player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.halfWay5;
-            setup.GetComponent<SetupPC>().Setup();
+            if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Printer] == status.final){
+                player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.halfWay5;
+                setup.GetComponent<SetupPC>().Setup();
+            }
         } 
     }
 }
