@@ -304,7 +304,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1935298be8868614abb4d591d206a005, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 216a636d008f2704aaebda3a4bfb280b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -374,7 +374,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2698267, y: 1.0533789}
+  m_Offset: {x: -1.3491375, y: -0.12184906}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -385,7 +385,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.318865, y: 1.8369315}
+  m_Size: {x: 13.014109, y: 5.8889427}
   m_EdgeRadius: 0
 --- !u!114 &702086241
 MonoBehaviour:
@@ -429,8 +429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shelfs:
-  - {fileID: 21300000, guid: 1935298be8868614abb4d591d206a005, type: 3}
-  - {fileID: 21300000, guid: 8e625f905267ae742bfbf317d7f75f9e, type: 3}
+  - {fileID: 21300000, guid: 216a636d008f2704aaebda3a4bfb280b, type: 3}
+  - {fileID: 21300000, guid: 253c9f0bf9051dd45a1a926ded51503d, type: 3}
   shelf: {fileID: 589839825}
   keyhole: {fileID: 1717414546}
   drawer: {fileID: 702086240}
@@ -492,9 +492,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4362705, y: 1.052609}
+  m_Offset: {x: -1.2271808, y: 1.8601274}
   serializedVersion: 2
-  m_Radius: 0.6082125
+  m_Radius: 0.48564285
 --- !u!4 &1717414547
 Transform:
   m_ObjectHideFlags: 0

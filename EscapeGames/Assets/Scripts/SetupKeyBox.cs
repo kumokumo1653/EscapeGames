@@ -9,7 +9,7 @@ public class SetupKeyBox : MonoBehaviour
     public Sprite[] KeyBoxes;
 
     public GameObject KeyBox;
-    public BoxCollider2D C_DoorKey;
+    public Collider2D C_DoorKey;
     public Text text;
     public GameObject numbers;
 

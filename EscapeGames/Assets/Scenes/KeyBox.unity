@@ -167,9 +167,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1333172, y: -1.8851953}
+  m_Offset: {x: -1.649914, y: -1.6306953}
   serializedVersion: 2
-  m_Radius: 0.56235147
+  m_Radius: 0.69529915
 --- !u!1 &507876011
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,9 +214,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0660187, y: -1.9145367}
+  m_Offset: {x: -0.11631024, y: -1.6980219}
   serializedVersion: 2
-  m_Radius: 0.58802485
+  m_Radius: 0.7133763
 --- !u!1 &528444506
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,9 +261,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.102695584, y: 0.8142283}
+  m_Offset: {x: -0.12464833, y: 1.3598537}
   serializedVersion: 2
-  m_Radius: 0.5953603
+  m_Radius: 0.70145416
 --- !u!1 &580685107
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,12 +503,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 18d00a403d78470419aa508ca3e7479e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02580faaeef56dd42be5be4948a5b185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9.6, y: 7.2}
+  m_Size: {x: 13.333333, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -572,9 +572,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.3583777, y: 0.8875816}
+  m_Offset: {x: -3.138925, y: 1.4104726}
   serializedVersion: 2
-  m_Radius: 0.59174275
+  m_Radius: 0.6978364
 --- !u!1 &963688106
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,9 +619,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0966407, y: 0.85823905}
+  m_Offset: {x: -1.6422662, y: 1.4190209}
   serializedVersion: 2
-  m_Radius: 0.60636485
+  m_Radius: 0.6973025
 --- !u!1 &1077339986
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,8 +631,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077339988}
-  - component: {fileID: 1077339987}
   - component: {fileID: 1077339989}
+  - component: {fileID: 1077339987}
   m_Layer: 0
   m_Name: C_DoorKey
   m_TagString: Untagged
@@ -640,8 +640,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1077339987
-BoxCollider2D:
+--- !u!60 &1077339987
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -653,7 +653,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.8275127, y: 0.13484454}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -663,9 +663,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.6761475, y: 7.3273244}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.5771729, y: -4.5000057}
+      - {x: -1.4552618, y: -4.4171796}
+      - {x: -1.5112317, y: -4.2719483}
+      - {x: -2.6188283, y: -3.0979192}
+      - {x: -2.573103, y: -2.7621913}
+      - {x: -3.262, y: -1.8995552}
+      - {x: -4.172785, y: -2.7717605}
+      - {x: -3.2658467, y: -3.52735}
+      - {x: -3.0366592, y: -3.3863995}
+      - {x: -1.8679559, y: -4.5034394}
 --- !u!4 &1077339988
 Transform:
   m_ObjectHideFlags: 0
@@ -737,9 +746,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.3363209, y: -1.8851953}
+  m_Offset: {x: -3.1226115, y: -1.6534865}
   serializedVersion: 2
-  m_Radius: 0.5476806
+  m_Radius: 0.71481514
 --- !u!1 &1124329383
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,9 +793,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.036564767, y: -3.282518}
+  m_Offset: {x: -0.15338933, y: -3.190816}
   serializedVersion: 2
-  m_Radius: 0.59223604
+  m_Radius: 0.7101393
 --- !u!1 &1162290855
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,9 +840,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1333168, y: -0.4988066}
+  m_Offset: {x: -1.6258955, y: -0.097165525}
   serializedVersion: 2
-  m_Radius: 0.58435786
+  m_Radius: 0.6601394
 --- !u!1 &1340116567
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,9 +887,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.3729982, y: -0.49513766}
+  m_Offset: {x: -3.0853424, y: -0.101074815}
   serializedVersion: 2
-  m_Radius: 0.5806904
+  m_Radius: 0.70194036
 --- !u!1 &1347965151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,9 +1047,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.183789, y: -3.259665}
+  m_Offset: {x: -1.6193731, y: -3.1614127}
   serializedVersion: 2
-  m_Radius: 0.58309126
+  m_Radius: 0.7304704
 --- !u!1 &1434504532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,9 +1080,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyBoxes:
-  - {fileID: 21300000, guid: 18d00a403d78470419aa508ca3e7479e, type: 3}
-  - {fileID: 21300000, guid: d8a842c033cb03946859a187a2758895, type: 3}
-  - {fileID: 21300000, guid: e4b83bc2c66778a48a0143431d373c53, type: 3}
+  - {fileID: 21300000, guid: bc35872808fedb84981b0d044cd9d948, type: 3}
+  - {fileID: 21300000, guid: 02580faaeef56dd42be5be4948a5b185, type: 3}
+  - {fileID: 21300000, guid: 4519a84e9977ebf43b600c940b28949a, type: 3}
   KeyBox: {fileID: 884640836}
   C_DoorKey: {fileID: 1077339987}
   text: {fileID: 1639120950}
@@ -1215,6 +1224,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07702184, y: -0.5464866}
+  m_Offset: {x: -0.16044486, y: -0.14005345}
   serializedVersion: 2
-  m_Radius: 0.58068943
+  m_Radius: 0.7313894

@@ -303,17 +303,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.2386827, y: 3.0237694}
-      - {x: -2.2218387, y: -0.38945207}
-      - {x: -2.0981193, y: -1.3745015}
-      - {x: -1.6839554, y: -1.9751923}
-      - {x: -0.13909686, y: -2.508841}
-      - {x: -0.11937344, y: -2.1569233}
-      - {x: -1.518405, y: -1.7959292}
-      - {x: -1.8454808, y: -1.1080879}
-      - {x: -1.9919266, y: 0.060220122}
-      - {x: -1.8747927, y: 2.9412646}
-      - {x: -1.968257, y: 3.0042653}
+    - - {x: 0.3097514, y: 1.0638924}
+      - {x: -0.4960538, y: 0.3072877}
+      - {x: -1.1818976, y: -0.47997135}
+      - {x: -1.6996744, y: -1.2587664}
+      - {x: -2.0480552, y: -1.4660454}
+      - {x: -2.5060692, y: -1.4157424}
+      - {x: -3.317936, y: -2.3634338}
+      - {x: -3.1847084, y: -2.7810092}
+      - {x: -2.1900086, y: -3.108008}
+      - {x: -1.380868, y: -2.1375754}
+      - {x: -1.5268903, y: -1.6015955}
+      - {x: -1.6784471, y: -1.478}
+      - {x: -1.4556012, y: -1.1808462}
+      - {x: -1.2432444, y: -0.99579334}
+      - {x: -1.3242794, y: -1.4431403}
+      - {x: -1.2332625, y: -1.7311976}
+      - {x: -1.0102146, y: -1.9651544}
+      - {x: -0.666906, y: -2.1674194}
+      - {x: -0.08768296, y: -1.9179691}
+      - {x: 0.54073524, y: -1.3745015}
+      - {x: 1.5214458, y: 0.07352233}
+      - {x: 1.5849051, y: -0.13500756}
+      - {x: 1.3586583, y: -0.66297483}
+      - {x: 0.82007074, y: -1.6466153}
+      - {x: 0.16395366, y: -2.5910034}
+      - {x: -0.36923057, y: -3.031178}
+      - {x: -0.81291837, y: -3.1143534}
+      - {x: -1.167772, y: -3.5016472}
+      - {x: -1.1244164, y: -3.6620405}
+      - {x: -1.2938805, y: -4.236014}
+      - {x: -0.85659933, y: -4.4083223}
+      - {x: -0.3941123, y: -4.17649}
+      - {x: 0.019522905, y: -3.575919}
+      - {x: -0.06169355, y: -3.1519012}
+      - {x: 0.22002226, y: -2.8264668}
+      - {x: 0.7311106, y: -2.3150482}
+      - {x: 1.1602795, y: -1.6724902}
+      - {x: 1.8748714, y: -0.11310983}
+      - {x: 1.6274859, y: 0.3774594}
+      - {x: 1.5571603, y: 1.0089886}
+      - {x: 1.1031969, y: 1.1729286}
 --- !u!4 &1327544321
 Transform:
   m_ObjectHideFlags: 0
@@ -385,7 +415,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c409655ccd45c064b878afa01b972990, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22d66e6fd5ee91499be2101f5411841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -440,10 +470,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawers:
-  - {fileID: 21300000, guid: c409655ccd45c064b878afa01b972990, type: 3}
-  - {fileID: 21300000, guid: e7e5cda3814ce254fba2e38b8a40da2a, type: 3}
-  - {fileID: 21300000, guid: 7e2fcd18d09af8144b743409e0da0c77, type: 3}
-  - {fileID: 21300000, guid: 85878a096684d0246aaf2b19fa9439e5, type: 3}
+  - {fileID: 21300000, guid: c22d66e6fd5ee91499be2101f5411841, type: 3}
+  - {fileID: 21300000, guid: 9e711f77c6943224887a335868cf1e8e, type: 3}
+  - {fileID: 21300000, guid: b9b20dc9b4a020946ba45e0e0d580297, type: 3}
+  - {fileID: 21300000, guid: 9ea3468b9697ce64f965df19aef39034, type: 3}
   drawer: {fileID: 1381354590}
   USB: {fileID: 1710303122}
   cord: {fileID: 1327544320}
@@ -470,8 +500,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710303123}
-  - component: {fileID: 1710303122}
   - component: {fileID: 1710303121}
+  - component: {fileID: 1710303122}
   m_Layer: 0
   m_Name: C_USB
   m_TagString: Untagged
@@ -492,8 +522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setup: {fileID: 1705964828}
---- !u!61 &1710303122
-BoxCollider2D:
+--- !u!60 &1710303122
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -505,7 +535,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0745677, y: 0.16118515}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -515,9 +545,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.60599184, y: 1.5014648}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.9899559, y: 3.3648753}
+      - {x: -2.5228333, y: 2.875772}
+      - {x: -3.8322785, y: 1.5846981}
+      - {x: -3.3488665, y: 1.0223193}
+      - {x: -1.5003381, y: 2.8901916}
 --- !u!4 &1710303123
 Transform:
   m_ObjectHideFlags: 0
