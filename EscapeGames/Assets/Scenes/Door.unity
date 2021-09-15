@@ -854,7 +854,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a563b5b1aeb71d469b7f436b2005457, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5aa58d46cce74ef49b7f221204a8702e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1730,9 +1730,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Doors:
-  - {fileID: 21300000, guid: 4a563b5b1aeb71d469b7f436b2005457, type: 3}
-  - {fileID: 21300000, guid: 1354e03bcb6dee840a9addef96864bed, type: 3}
-  - {fileID: 21300000, guid: 9c9eba6a365a7b941bf43fa7c1c04357, type: 3}
+  - {fileID: 21300000, guid: 5aa58d46cce74ef49b7f221204a8702e, type: 3}
+  - {fileID: 21300000, guid: 9d1da94e3e3deb24697967fe0e095d2d, type: 3}
+  - {fileID: 21300000, guid: 483322034c4f86a40ab1a9f30eb86e02, type: 3}
   Door: {fileID: 717262296}
 --- !u!4 &1824974162
 Transform:
