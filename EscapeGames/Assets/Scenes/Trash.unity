@@ -651,14 +651,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.09777117, y: 2.224519}
-      - {x: -1.1498945, y: -0.30983457}
-      - {x: -0.4660284, y: -0.73944175}
-      - {x: 2.2222176, y: -2.3879833}
-      - {x: 2.2805161, y: -2.283447}
-      - {x: 2.436931, y: -1.9711678}
-      - {x: 2.9016318, y: -1.0489397}
-      - {x: 3.4731612, y: 0.10029122}
+    - - {x: 2.2350159, y: -0.5898726}
+      - {x: 1.9395881, y: -1.2409116}
+      - {x: 1.565412, y: -2.3265047}
+      - {x: 2.0529308, y: -2.55727}
+      - {x: 2.301677, y: -2.6643422}
+      - {x: 4.1509585, y: -3.3254616}
+      - {x: 4.806107, y: -1.5779607}
+      - {x: 3.6636083, y: -1.0847158}
 --- !u!114 &1035526219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,12 +743,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 71e701e359f7c2a459425c695ee57cde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22740256ec105a142b150d109052b8b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 13.333333, y: 10}
+  m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -884,8 +884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Trashes:
-  - {fileID: 21300000, guid: 71e701e359f7c2a459425c695ee57cde, type: 3}
-  - {fileID: 21300000, guid: ff39b825cc1e6b5429298c8416f17577, type: 3}
+  - {fileID: 21300000, guid: 22740256ec105a142b150d109052b8b7, type: 3}
+  - {fileID: 21300000, guid: b641b3524bee41b45aea31e071e4096a, type: 3}
   Trash: {fileID: 1052932626}
   C_Trash: {fileID: 1035526218}
 --- !u!4 &1188387939
