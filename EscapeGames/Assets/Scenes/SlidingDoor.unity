@@ -215,7 +215,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1907783, y: 0.14605021}
+  m_Offset: {x: -1, y: 0.14605021}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -441,7 +441,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.833334, y: 13.888889}
+  m_Size: {x: 13.333333, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -568,7 +568,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.7926283, y: 0.1676799}
+  m_Offset: {x: -0.76, y: 0.1676799}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -640,8 +640,8 @@ MonoBehaviour:
   doors:
   - {fileID: 21300000, guid: f2521be06bf34e345bdb4572fdced876, type: 3}
   - {fileID: 21300000, guid: 91226188f43c74641870941597203e3f, type: 3}
-  - {fileID: 21300000, guid: e5721e9bdee613b4db2023481e9e52d8, type: 3}
-  - {fileID: 21300000, guid: d7623cb98c04f3247969c1f626052022, type: 3}
+  - {fileID: 21300000, guid: 145726a1d9882cd4a82bf559dcbe0545, type: 3}
+  - {fileID: 21300000, guid: 4ca269223e94a6b41b1d9eae6dcc5b49, type: 3}
   - {fileID: 21300000, guid: 5727a7cdbc60f2c4cb6eceb76eb38b96, type: 3}
   - {fileID: 21300000, guid: 92e9168079fb6b04587655f5fea670d7, type: 3}
   keyHole: {fileID: 175038369}
