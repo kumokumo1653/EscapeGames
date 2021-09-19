@@ -18,7 +18,7 @@ public class ClickLoginListener : MonoBehaviour
 
     public void ClickLogin(GameObject obj, Vector2 vec2){
         if(obj == this.gameObject){
-            if(numbers.text == "  1   0   2   6"){
+            if(numbers.text == "  1   0    2   2"){
                 //成功
                 //event
 

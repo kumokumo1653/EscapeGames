@@ -6,15 +6,26 @@ public class FirstText : MonoBehaviour
 {
     [HideInInspector]
     public static bool done = false;
+    private GameObject textArea;
+    private GameObject player;
 
-    void Start() {
-        if (!done) {
-            DontDestroyOnLoad (this.gameObject);
-            InheritTextArea.Instance.transform.Find("MessageWindow").gameObject.GetComponent<TextController>().pushText( new string[] {
-                "てきすと1",
-                "てきすと2"
+
+    void Start()
+    {
+        textArea = InheritTextArea.Instance.transform.Find("MessageWindow").gameObject;
+        player = InheritPlayer.Instance;
+    }
+    void Update()
+    {
+        if(player.GetComponent<GameDataCollection>().progress == gameProgress.unplay){
+            player.GetComponent<GameDataCollection>().progress = gameProgress.play;
+            textArea.GetComponent<TextController>().pushText(new string[]{
+                TextCollection.TextList[(int)TextList.hero1],
+                TextCollection.TextList[(int)TextList.hero2],
+                TextCollection.TextList[(int)TextList.hero3],
+                TextCollection.TextList[(int)TextList.hero4],
             });
-            done = true;
         }
     }
+
 }

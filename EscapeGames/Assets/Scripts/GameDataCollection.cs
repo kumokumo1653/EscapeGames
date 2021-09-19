@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum gameProgress{
+    unplay,
+    play,
+    result
+}
 public class GameDataCollection : MonoBehaviour
 {
 
+    
     public List<itemList> ItemList{get; set;}
     public itemList selectedItem{get; set;}
 
@@ -12,6 +18,9 @@ public class GameDataCollection : MonoBehaviour
 
     public bool isHasInk{get;set;}
     public bool isHasScissors{get;set;}
+
+    public gameProgress progress{get;set;}
+    
     void Awake() {
         ItemList = new List<itemList>(); 
         selectedItem = itemList.None;
@@ -22,6 +31,7 @@ public class GameDataCollection : MonoBehaviour
 
         isHasInk = false;
         isHasScissors = false;
+        progress = gameProgress.unplay;
     }
 
     void Start()

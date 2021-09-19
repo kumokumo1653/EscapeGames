@@ -43,7 +43,11 @@ public class InputPassword : MonoBehaviour
         for(int i = 0; i < selectNumbers.Length;i++){
             Numbers.text += selectNumbers[i];
             if(i != selectNumbers.Length - 1){
-                Numbers.text += "   ";
+                if(i == 1){
+                    Numbers.text += "    ";
+                }else{
+                    Numbers.text += "   ";
+                }
             }
 
         }
