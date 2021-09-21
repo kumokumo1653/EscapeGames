@@ -38,7 +38,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = false;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = true;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = true;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay1){
             PC.GetComponent<SpriteRenderer>().sprite = PCs[1]; 
@@ -50,7 +50,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = true;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = true;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay2){
             PC.GetComponent<SpriteRenderer>().sprite = PCs[2]; 
@@ -62,7 +62,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = false;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = false;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay3){
             PC.GetComponent<SpriteRenderer>().sprite = PCs[3]; 
@@ -74,7 +74,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = false;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = false;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay4){
             //print 
@@ -86,7 +86,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = true;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = false;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = false;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay5){
             PC.GetComponent<SpriteRenderer>().sprite = PCs[5]; 
@@ -98,7 +98,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = false;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = false;
             }
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.final){
             PC.GetComponent<SpriteRenderer>().sprite = PCs[6]; 
@@ -110,7 +110,7 @@ public class SetupPC : MonoBehaviour
             go.enabled = false;
             hint.enabled = true;
             for(int i = 0; i < numbers.transform.childCount; i++){
-                childNumbers[i].GetComponent<CircleCollider2D>().enabled = false;
+                childNumbers[i].GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }

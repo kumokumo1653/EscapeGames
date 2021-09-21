@@ -14,9 +14,9 @@ public class SetupSlidingDoor : MonoBehaviour
     public Collider2D scissors;
     public GameObject door;
     private Vector2 rightclose = new Vector2(1.19f, 0.14f);
-    private Vector2 rightopen = new Vector2(-1.63f, 0.11f);
+    private Vector2 rightopen = new Vector2(-1.0f, 0.11f);
     private Vector2 leftclose = new Vector2(-3.80f, 0.16f);
-    private Vector2 leftopen = new Vector2(-1.02f, 0.11f);
+    private Vector2 leftopen = new Vector2(-0.76f, 0.11f);
     void Start() {
         Player = InheritPlayer.Instance;
         Setup();

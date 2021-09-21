@@ -27,7 +27,7 @@ public class SlidingDoorKeyClickListener : MonoBehaviour
             this.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             //player.GetComponent<GameDataCollection>().isHasInk = true;
             //テキスト
-            messagewindow.GetComponent<TextController>().pushText(TextList.getKeyOverShelf);
+            messagewindow.GetComponent<TextController>().pushText(TextList.getKeyUnderShelf);
             setup.GetComponent<SetupWater>().Setup();
             }
     }

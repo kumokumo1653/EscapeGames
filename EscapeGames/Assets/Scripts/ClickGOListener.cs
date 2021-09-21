@@ -18,6 +18,10 @@ public class ClickGOListener : MonoBehaviour
             if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Printer] == status.final){
                 player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.halfWay5;
                 setup.GetComponent<SetupPC>().Setup();
+            }else{
+
+                player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.halfWay3;
+                setup.GetComponent<SetupPC>().Setup();
             }
         } 
     }

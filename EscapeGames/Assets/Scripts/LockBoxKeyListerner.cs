@@ -22,7 +22,7 @@ public class LockBoxKeyListerner : MonoBehaviour
         if (obj == this.gameObject) {
             InheritPlayer.Instance.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.LockBox] = status.final;
             itemArea.GetComponent<ItemListController>().pushItem(itemList.ShelfKey);
-            messagewindow.GetComponent<TextController>().pushText(TextList.getKeyUnderShelf);
+            messagewindow.GetComponent<TextController>().pushText(TextList.getKeyOverShelf);
             controller.Setup();
             this.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         }
