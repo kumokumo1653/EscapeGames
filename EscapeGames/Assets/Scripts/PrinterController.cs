@@ -27,8 +27,6 @@ public class PrinterController : MonoBehaviour
 
     public void setInk(GameObject obj, Vector2 vec2) {
         if (obj == this.gameObject) {
-            Debug.Log(this.gameObject);
-            Debug.Log(gamedata.selectedItem);
             if (gamedata.selectedItem == itemList.Ink) {
                 gamedata.eventFlagList[(int)eventList.Printer] = status.final;
                 InheritItemArea.Instance.GetComponent<ItemListController>().popItem(itemList.Ink);

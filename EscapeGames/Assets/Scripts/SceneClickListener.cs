@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneClickListener : MonoBehaviour
 {
+
     // Start is called before the first frame update
     private GameObject player;
     void Start() {

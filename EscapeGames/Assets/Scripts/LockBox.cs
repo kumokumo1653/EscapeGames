@@ -17,7 +17,7 @@ public class LockBox : MonoBehaviour
     private LockBoxController controller;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         moon = this.transform.Find("moon").gameObject;
         fire = this.transform.Find("fire").gameObject;
@@ -41,35 +41,35 @@ public class LockBox : MonoBehaviour
     }
 
     public void updateDisplay() {
-        moon.SetActive(false);
-        fire.SetActive(false);
-        tree.SetActive(false);
-        water.SetActive(false);
-        gold.SetActive(false);
-        jupyter.SetActive(false);
-        sun.SetActive(false);
+        this.ToInvisible(moon);
+        this.ToInvisible(fire);
+        this.ToInvisible(tree);
+        this.ToInvisible(water);
+        this.ToInvisible(gold);
+        this.ToInvisible(jupyter);
+        this.ToInvisible(sun);
 
         switch (display) {
             case 0:
-                moon.SetActive(true);
+                this.ToVisible(moon);
                 break;
             case 1:
-                fire.SetActive(true);
+                this.ToVisible(fire);
                 break;
             case 2:
-                water.SetActive(true);
+                this.ToVisible(water);
                 break;
             case 3:
-                tree.SetActive(true);
+                this.ToVisible(tree);
                 break;
             case 4:
-                gold.SetActive(true);
+                this.ToVisible(gold);
                 break;
             case 5:
-                jupyter.SetActive(true);
+                this.ToVisible(jupyter);
                 break;
             case 6:
-                sun.SetActive(true);
+                this.ToVisible(sun);
                 break;
             case -1:
                 upperAllow.GetComponent<PolygonCollider2D>().enabled = false;
@@ -100,5 +100,13 @@ public class LockBox : MonoBehaviour
             updateDisplay();
             controller.checkStatus();
         }
+    }
+
+    public void ToInvisible(GameObject obj) {
+        obj.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    public void ToVisible(GameObject obj){
+        obj.GetComponent<SpriteRenderer>().enabled = true;
     }
 }

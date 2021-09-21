@@ -44,8 +44,6 @@ public class TextController : MonoBehaviour
     }
 
     public void pushText(TextList e) {
-        Debug.Log(text_queue);
-        Debug.Log(TextCollection.TextList[(int)e]);
         text_queue.Add(TextCollection.TextList[(int)e]);
         this.flushMessageWindow();
     }

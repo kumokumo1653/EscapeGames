@@ -76,9 +76,13 @@ public class LockBoxController : MonoBehaviour
         } else if (player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.LockBox] == status.final) {
             lockbox.GetComponent<SpriteRenderer>().sprite = sprites[2];
             obj_display1.GetComponent<LockBox>().display = -1;
+            obj_display1.GetComponent<LockBox>().updateDisplay();
             obj_display2.GetComponent<LockBox>().display = -1;
+            obj_display2.GetComponent<LockBox>().updateDisplay();
             obj_display3.GetComponent<LockBox>().display = -1;
+            obj_display3.GetComponent<LockBox>().updateDisplay();
             obj_display4.GetComponent<LockBox>().display = -1;
+            obj_display4.GetComponent<LockBox>().updateDisplay();
 
             key.SetActive(false);
         }
