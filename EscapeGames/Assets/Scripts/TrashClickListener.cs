@@ -30,7 +30,7 @@ public class TrashClickListener : MonoBehaviour
         //if((obj == this.gameObject) && !used){
         if(obj == this.gameObject){
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Film1);
-            player.GetComponent<GameDataCollection>().eventFlagList[(int)itemList.Film1] = status.final;
+            player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Trash] = status.final;
             this.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             
             //マップ内のアイテムの状態を更新

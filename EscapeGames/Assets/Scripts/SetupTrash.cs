@@ -26,12 +26,12 @@ public class SetupTrash : MonoBehaviour
         //}
     }
     public void Setup(){
-        if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)itemList.Film1] == status.initial){
+        if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Trash] == status.initial){
             Trash.GetComponent<SpriteRenderer>().sprite = Trashes[0]; 
             //フィルム1取得できるのでtrue
             C_Trash.enabled = true;
             //used = true;
-        }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)itemList.Film1] == status.final){
+        }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Trash] == status.final){
             Trash.GetComponent<SpriteRenderer>().sprite = Trashes[1]; 
             //フィルム1取得済みなのでfalse
             C_Trash.enabled = false;
