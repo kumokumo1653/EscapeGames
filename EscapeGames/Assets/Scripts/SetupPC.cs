@@ -48,7 +48,7 @@ public class SetupPC : MonoBehaviour
             printbutton.enabled = false; 
             home.enabled = false;
             go.enabled = false;
-            hint.enabled = true;
+            hint.enabled = false;
             for(int i = 0; i < numbers.transform.childCount; i++){
                 childNumbers[i].GetComponent<BoxCollider2D>().enabled = true;
             }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: e41ada5982cceed48a3d7bd920f3b3c0
+  - enabled: 1
     path: Assets/Scenes/Door.unity
     guid: eacc79900d644cb4f845809225a2d420
   - enabled: 1
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PCSide.unity
     guid: 9491204b34efafa4295849225db89ae6
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 65dd4c68a5964814e97edddf844ea144
   - enabled: 1
     path: Assets/Scenes/LockBox.unity
     guid: a5bd415f779a4524db96b30c3fe2ade3
