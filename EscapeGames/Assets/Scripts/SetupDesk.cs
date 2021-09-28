@@ -35,28 +35,28 @@ public class SetupDesk : MonoBehaviour
             KeyHole.GetComponent<SpriteRenderer>().sprite = BothKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay4){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[4]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay5){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[5]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay6){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[6]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay7){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[7]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay8){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[8]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay9){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[9]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay10){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[10]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay11){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[11]; 
-            KeyHole.GetComponent<SpriteRenderer>().sprite = SlidingDoorKeyHole;
+            KeyHole.GetComponent<SpriteRenderer>().sprite = ShelfKeyHole;
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Desk] == status.halfWay12){
             Desk.GetComponent<SpriteRenderer>().sprite = Desks[12]; 
             KeyHole.GetComponent<SpriteRenderer>().sprite = null;
