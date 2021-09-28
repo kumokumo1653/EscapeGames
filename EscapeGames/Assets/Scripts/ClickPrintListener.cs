@@ -15,7 +15,7 @@ public class ClickPrintListener : MonoBehaviour
 
     public void ClickPrint(GameObject obj, Vector2 vec2){
         if(obj == this.gameObject){
-            if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PCSide] == status.final){
+            if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PCSide] == status.final && player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Printer] == status.final){
                 //success
                 player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.halfWay4;
             }else{
