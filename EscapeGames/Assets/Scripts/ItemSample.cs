@@ -17,11 +17,9 @@ public class ItemSample : MonoBehaviour
     {
         if(!f){
             f = true;
-            itemArea.GetComponent<ItemListController>().pushItem(itemList.ShelfKey);
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Film1);
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Film2);
             itemArea.GetComponent<ItemListController>().pushItem(itemList.Cord);
-            itemArea.GetComponent<ItemListController>().pushItem(itemList.SlidingDoorKey);
         }
     }
 }

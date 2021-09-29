@@ -35,7 +35,7 @@ public class Screen1ClickListener : MonoBehaviour
 
                 setup.GetComponent<SetupProjectorScreen>().Setup();
             //フィルム2の処理
-            /*}else if(player.GetComponent<GameDataCollection>().selectedItem == itemList.Film2){
+            }else if(player.GetComponent<GameDataCollection>().selectedItem == itemList.Film2){
                 //アイテム削除
                 itemArea.GetComponent<ItemListController>().popItem(itemList.Film2);
                 //イベント更新
@@ -47,7 +47,7 @@ public class Screen1ClickListener : MonoBehaviour
                     player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] = status.final;
                 }
 
-                setup.GetComponent<SetupProjectorScreen>().Setup();*/
+                setup.GetComponent<SetupProjectorScreen>().Setup();
             }else{
                 textArea.GetComponent<TextController>().pushText(TextList.checkScreen2);
             }

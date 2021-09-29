@@ -26,7 +26,11 @@ public class RingClickListener : MonoBehaviour
                 //イベント更新
                 if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] == status.halfWay1){
                     //棒を取っているとき
-                    player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] = status.halfWay2;
+                    if(player.GetComponent<GameDataCollection>().isPutCord){
+                        player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] = status.halfWay5;
+                    }else{
+                        player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] = status.halfWay2;
+                    }
                 }else if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] == status.halfWay3){
                     //スクリーンが下がっているとき
                     player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] = status.halfWay5;

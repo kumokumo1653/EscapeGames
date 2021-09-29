@@ -41,6 +41,8 @@ public enum TextList{
     hint3,
     hint4,
     hint5,
+    cutPaper,
+    getfilm2,
     LIST_LEN　//enumの長さを取得
 }
 public static class TextCollection 
@@ -82,7 +84,9 @@ public static class TextCollection
         "インクを使える機器があれば...",
         "ハサミで切れるものはないか...",//画面3について
         "スクリーンに何かをかざすと...",//画面4について
-        "水道に水が溜まっている....不気味だ。"//画面5について
+        "水道に水が溜まっている....不気味だ。",//画面5について
+        "ハサミを使って紙を切ってみた。",
+        "フィルムを手に入れた。しましまが気になる。"
         
     };
 }

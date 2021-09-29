@@ -78,7 +78,7 @@ public class SetupProjectorScreen : MonoBehaviour
             C_Cord.enabled = false;
             C_Rod.enabled = false;
             C_Ring.enabled = false;
-            C_Screen1.enabled = false;
+            C_Screen1.enabled = true;
             C_Screen2.enabled = true; 
         }else if(Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] == status.halfWay7){
             ProjectorScreen.GetComponent<SpriteRenderer>().sprite = ProjectorScreens[7]; 

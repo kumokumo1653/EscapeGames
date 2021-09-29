@@ -18,6 +18,7 @@ public class GameDataCollection : MonoBehaviour
 
     public bool isHasInk{get;set;}
     public bool isHasScissors{get;set;}
+    public bool isPutCord{get;set;}
 
     public gameProgress progress{get;set;}
     
@@ -31,6 +32,7 @@ public class GameDataCollection : MonoBehaviour
 
         isHasInk = false;
         isHasScissors = false;
+        isPutCord = false;
         progress = gameProgress.unplay;
     }
 

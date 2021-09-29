@@ -13,6 +13,7 @@ public class ItemListController : MonoBehaviour
 
     public Sprite[] backgrounds = new Sprite[4];
     private GameObject player;
+    private GameObject textArea;
     private GameDataCollection dataCollection;
     private int startSlot = 0;
     void Start()
@@ -21,6 +22,8 @@ public class ItemListController : MonoBehaviour
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(ArrowListener);
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(selectItem);
         dataCollection = player.GetComponent<GameDataCollection>();
+        textArea = InheritTextArea.Instance;
+        textArea = textArea.transform.Find("MessageWindow").gameObject;
         background.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
         DrawItemSlot();
     }
@@ -89,8 +92,24 @@ public class ItemListController : MonoBehaviour
                     //同じアイテムを選択状態だったら非選択状態に
                     if(dataCollection.selectedItem == dataCollection.ItemList[startSlot + i])
                         dataCollection.selectedItem = itemList.None;
-                    else
+                    else{
                         dataCollection.selectedItem = dataCollection.ItemList[startSlot + i];
+                        if(dataCollection.selectedItem == itemList.Paper){
+                            //sreach hasami
+                            for(int j = 0; j < dataCollection.ItemList.Count;j++){
+                                Debug.Log(dataCollection.ItemList[j]);
+                                if(dataCollection.ItemList[j] == itemList.Scissors){
+                                    //text
+                                    textArea.GetComponent<TextController>().pushText(new string []{TextCollection.TextList[(int)TextList.cutPaper],TextCollection.TextList[(int)TextList.getfilm2]});
+                                    //item
+                                    pushItem(itemList.Film2);
+                                    popItem(itemList.Paper);
+                                    popItem(itemList.Scissors);
+                                    break;
+                                }
+                            }
+                        }
+                    }
                 }catch(Exception e){
                     dataCollection.selectedItem = itemList.None;
                 }

@@ -25,6 +25,7 @@ public class CordClickListener : MonoBehaviour
                 itemArea.GetComponent<ItemListController>().popItem(itemList.Cord);
                 //延長コード接続
                 textArea.GetComponent<TextController>().pushText(TextList.connectCord);
+                player.GetComponent<GameDataCollection>().isPutCord = true;
                 //イベント更新
                 if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] == status.initial){
                 //|| (player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Screen] == status.halfWay1)){

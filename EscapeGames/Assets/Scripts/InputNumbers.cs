@@ -28,7 +28,7 @@ public class InputNumbers : MonoBehaviour
                 UpdateNumbers();
 
                 //正解ならキーボックスを開ける。
-                if(Numbers.text == "  1  1  1  1  1"){
+                if(Numbers.text == " 0   2  4   3   9"){
                     Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.halfWay1;
                     Player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.halfWay1;
                     Setup.GetComponent<SetupKeyBox>().Setup(); 
@@ -44,11 +44,15 @@ public class InputNumbers : MonoBehaviour
     }
 
     void UpdateNumbers(){
-        Numbers.text = "  ";
+        Numbers.text = " ";
         for(int i = 0; i < selectNumbers.Length;i++){
             Numbers.text += selectNumbers[i];
             if(i != selectNumbers.Length - 1){
-                Numbers.text += "  ";
+                if(i == 1){
+                    Numbers.text += "  ";
+                }else{
+                    Numbers.text += "   ";
+                }
             }
 
         }
