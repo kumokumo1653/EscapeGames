@@ -14,5 +14,6 @@ public class DebugEventStatue : MonoBehaviour
     void Update()
     {
         //Debug.Log(this.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC]);
+        Debug.Log(this.GetComponent<GameDataCollection>().progress);
     }
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using static TextCollection;
 
+public enum TextAreaStatus {
+    Empty,
+    Progress
+}
+
 public class TextController : MonoBehaviour
 {
     private GameObject messagewindow;
@@ -31,6 +36,14 @@ public class TextController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public TextAreaStatus getTextQueueStatus() {
+        if (messagewindow.activeSelf || this.text_queue.Count > 0) {
+            return TextAreaStatus.Progress;
+        } else {
+            return TextAreaStatus.Empty;
+        }
     }
 
     void flushMessageWindow() {
