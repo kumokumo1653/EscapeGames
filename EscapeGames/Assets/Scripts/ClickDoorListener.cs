@@ -19,6 +19,7 @@ public class ClickDoorListener : MonoBehaviour
             if(player.GetComponent<GameDataCollection>().selectedItem == itemList.DoorKey){
 
                 messagewindow.GetComponent<TextController>().pushText(TextList.openDoor);
+                player.GetComponent<GameDataCollection>().progress = gameProgress.result;
             }else{
                 messagewindow.GetComponent<TextController>().pushText(TextList.checkKey);
             }
