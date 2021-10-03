@@ -17,7 +17,7 @@ public class ClickHomeListener : MonoBehaviour
         if(obj == this.gameObject){
             Debug.Log(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PCSide]);
             Debug.Log(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Printer]);
-            if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PCSide] == status.final && player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Printer] == status.final){
+            if(player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] == status.halfWay5){
                 //success print
                 player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.PC] = status.final;
             }else{
