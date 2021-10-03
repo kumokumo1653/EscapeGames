@@ -6,11 +6,14 @@ public class DoorKeyClickListener : MonoBehaviour
 {
     private GameObject player;
     private GameObject itemArea;
+    private  GameObject messagewindow; 
     public GameObject setup;
+    
     void Start() {
         player = InheritPlayer.Instance;
         player.GetComponent<ClickEventHandler>().clickEvent.AddListener(DoorKeyListener);
-
+        messagewindow = InheritTextArea.Instance;
+        messagewindow = messagewindow.transform.Find("MessageWindow").gameObject;
         itemArea = InheritItemArea.Instance;
     }
 
@@ -22,6 +25,8 @@ public class DoorKeyClickListener : MonoBehaviour
             player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.Door] = status.final;
             player.GetComponent<GameDataCollection>().eventFlagList[(int)eventList.KeyBox] = status.final;
 
+            //テキスト
+            messagewindow.GetComponent<TextController>().pushText(TextList.getKeydoor);
             setup.GetComponent<SetupKeyBox>().Setup();
         }
     }
