@@ -24,6 +24,10 @@ public class FirstText : MonoBehaviour
                 TextCollection.TextList[(int)TextList.hero2],
                 TextCollection.TextList[(int)TextList.hero3],
                 TextCollection.TextList[(int)TextList.hero4],
+                TextCollection.TextList[(int)TextList.hero6],
+                TextCollection.TextList[(int)TextList.hero7],
+                TextCollection.TextList[(int)TextList.hero8],
+                TextCollection.TextList[(int)TextList.hero9],
             });
         }
     }
